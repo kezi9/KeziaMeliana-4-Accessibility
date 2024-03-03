@@ -80,6 +80,9 @@ form span {
     margin-right: 10px;
     position: relative;
 }
+form .reqField {
+    color: red;
+}
 /* hover */
 form .flexbox:hover span {
     background-color: #ccc;
@@ -112,7 +115,7 @@ label.check {
     width: auto;
     margin-bottom: 15px;
 }
-input[type=submit] {
+button {
     font-family: Quando;
     text-transform: uppercase;
     width: calc( 100% - 2px );
@@ -124,11 +127,10 @@ input[type=submit] {
     margin: 4px 2px;
     cursor: pointer;
     transition: all 0.5s;
+    &:hover {
+        background-color: #84B2FF;
+    }
 }
-input[type=submit]:hover {
-    background-color: #84B2FF;
-}
-
 
 .container {
     width: 94%;
